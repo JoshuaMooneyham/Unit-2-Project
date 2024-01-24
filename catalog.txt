@@ -1,0 +1,15 @@
+Solkvwagen, Corolla, 2020, 18000, 21000, red
+Solkvwagen, Civic, 2022, 18005, 23055, blue
+Solkvwagen, Stinger, 2019, 18409, 19542, orange
+Solkvwagen, Sentra, 2009, 2500, 5000, blue
+Solkvwagen, Taos, 2023, 22944, 25443, black
+Solkvwagen, Tiguan, 2024, 26544, 31299, white
+Solkvwagen, Atlas, 2023, 22944, 25443, purple
+Solkvwagen, Jetta, 2022, 21114, 24399, red
+Solkvwagen, Golf R, 2017, 13500, 16995, black
+Solkvwagen, Arteon, 2022, 26544, 31299, pink
+Solkvwagen, Stream, 2001, 2100, 3650, white
+Solkvwagen, Camry, 2018, 19885, 24990, gray
+Solkvwagen, Eclipse, 2006, 3000, 4500, red
+Solkvwagen, Altima, 2013, 5300, 7200, white
+Solkvwagen, Fusion, 2016, 7460, 9500, gray
