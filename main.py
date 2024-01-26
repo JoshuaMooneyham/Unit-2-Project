@@ -5,8 +5,6 @@ import bcrypt
 import pwinput
 from colorama import Fore
 
-from supersecret import happyfuntime
-
 
 class Account:
     def __init__(self, name: str, pw: bytes, salt: bytes, mod: bool, admin: bool):
@@ -36,7 +34,7 @@ class Car:
 
 
 ###==={Password Hashing}===###
-def HashPassword(password: str, salt=None) -> tuple:
+def HashPassword(password: str, salt: Optional[bytes]) -> tuple[bytes, bytes]:
     bytepassword = password.encode()  # Standard encode to ASCII
     salt = bcrypt.gensalt() if salt == None else salt
     hashed = bcrypt.hashpw(bytepassword, salt)
@@ -70,7 +68,7 @@ def add_account(profiles: list[Account]) -> Account:
         else:
             Invalid_account = False
 
-    Hashed = HashPassword(password)
+    Hashed = HashPassword(password, None)
 
     is_admin = False if len(profiles) != 0 else True
 
@@ -146,7 +144,7 @@ def price_format(price: int) -> str:
 
 ###==={Sort Cars by Color}===###
 def sort_cars_by_colors(car_list: list[Car]) -> dict[str, Car]:
-    color_dict = {}
+    color_dict: dict[str, Car] = {}
     for car in car_list:
         color = car.color.lower()
         if color in color_dict:
@@ -308,7 +306,7 @@ def main():
 
         ###==={Login Screen}===###
         if state == "start":
-            os.system("clear")
+            os.system("cls")
             while current_user is None and running:
                 print(
                     "Welcome! Would you like to [Log in], [Create] an account, or [Quit]."
@@ -337,7 +335,7 @@ def main():
                     print("Please enter a valid input\n")
                 elif current_user is not None:
                     state = "browse" if not current_user.is_moderator else "manage"
-                    os.system("clear")
+                    os.system("cls")
 
         ###==={Customer View}===###
         elif state == "browse":
@@ -385,7 +383,7 @@ def main():
                 current_user.is_moderator or current_user.is_admin
             ):
                 state = "manage"
-                os.system("clear")
+                os.system("cls")
 
             ###==={Logout}===###
             elif choice == "logout":
@@ -521,7 +519,7 @@ def main():
                                 f.write(
                                     f"{user.username}, {user.password}, {user.salt}, {user.is_moderator}, {user.is_admin}\n"
                                 )
-                        os.system("clear")
+                        os.system("cls")
 
                     ###==={Input Validation}===#
                     else:
@@ -561,7 +559,7 @@ def main():
                                 f.write(
                                     f"{car.make}, {car.model}, {car.year}, {car.cost_price}, {car.selling_price}, {car.color}\n"
                                 )
-                        os.system("clear")
+                        os.system("cls")
 
                     ###==={Input Validation}===###
                     else:
@@ -601,7 +599,7 @@ def main():
                                 f.write(
                                     f"{car.make}, {car.model}, {car.year}, {car.cost_price}, {car.selling_price}, {car.color}\n"
                                 )
-                        os.system("clear")
+                        os.system("cls")
 
                     ###==={Input Validation}===###
                     else:
@@ -615,12 +613,7 @@ def main():
             ###==={View as Customer}===###
             elif choice == "customer":
                 state = "browse"
-                os.system("clear")
-
-            ###==={Kevin James}===###
-            elif choice == "supersecret":
-                happyfuntime()
-                running = False
+                os.system("cls")
 
             else:
                 print("Invalid Action\n")

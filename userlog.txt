@@ -1,4 +1,4 @@
-treyshelton6, b'$2b$12$wOf25OUPtEJAgznNbjHIWOHnPkHOFrXSSQA5zPWlEj.SMkjv4Hfl.', b'$2b$12$wOf25OUPtEJAgznNbjHIWO', True, False
+treyshelton6, b'$2b$12$wOf25OUPtEJAgznNbjHIWOHnPkHOFrXSSQA5zPWlEj.SMkjv4Hfl.', b'$2b$12$wOf25OUPtEJAgznNbjHIWO', True, True
 nottreyshelton6, b'$2b$12$AHkQa1iLGVjrJ1YbeqPFPuoWUOgNA0MbTdtX4d7dsRHD7Upj3RAqq', b'$2b$12$AHkQa1iLGVjrJ1YbeqPFPu', False, False
 frog, b'$2b$12$65rsKQvHGdKD9BTL1aCsuuUYda3xAQk5ODXeBxcn/spslQhd2XBgy', b'$2b$12$65rsKQvHGdKD9BTL1aCsuu', False, False
 kwicker1, b'$2b$12$mCwH22lK2dWZyVDRG9OQ..YhsPo4StM441ImGb7NmwbBU8J53Yt9a', b'$2b$12$mCwH22lK2dWZyVDRG9OQ..', False, False
@@ -16,4 +16,4 @@ theabsolute, b'$2b$12$91sWAaW9bbwX9vq8BXglN.bWrkcGQKzCCKzpB2fKjmp/qVADiZUyO', b'
 karebear4940, b'$2b$12$T3Nyw/bnNJGCB9dCfeJzK.kEy0InwkdwAejCBK82d92hnxNUkUXTC', b'$2b$12$T3Nyw/bnNJGCB9dCfeJzK.', False, False
 mdb3272, b'$2b$12$yGIfVonsFjx.iMPTZj5fuer9WovQogHl3AbJw.cv3gzwrnXsDDsLW', b'$2b$12$yGIfVonsFjx.iMPTZj5fue', False, False
 john, b'$2b$12$k3Mm/mNtLIsubZXUbaCYFOtrUWDpmg7Rtc45MYtFBueTcfHy8Ki8i', b'$2b$12$k3Mm/mNtLIsubZXUbaCYFO', False, False
-john1, b'$2b$12$1zhxeD308WqOasDA7vpd/.Lzh9SuKU4Bp7a26iB49HOi8ujdHIgpW', b'$2b$12$1zhxeD308WqOasDA7vpd/.', False, False
+trersd, b'$2b$12$yVCEgTw1cCcxpkkt38eEK.vY9EW3X2nJOxiCNtUbmU0B3oxQxZUdG', b'$2b$12$yVCEgTw1cCcxpkkt38eEK.', False, False
